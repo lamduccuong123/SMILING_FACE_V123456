@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary_A"
+    tools:context=".AdminActivity"
+    tools:layout_editor_absoluteY="89dp">
+
+    <Button
+        android:id="@+id/btn_statis"
+        android:layout_width="@dimen/sizeH_btn_admin"
+        android:layout_height="@dimen/sizeV_btn_admin"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="156dp"
+        android:text="statistics"
+        android:background="@color/colorAccent_A"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/fontSize_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_user"
+        android:layout_width="@dimen/sizeH_btn_admin"
+        android:layout_height="@dimen/sizeV_btn_admin"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="156dp"
+        android:background="@color/colorAccent_A"
+        android:text="Users"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/fontSize_btn"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btn_statis"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="@dimen/sizeH_btn_admin"
+        android:layout_height="@dimen/sizeV_btn_admin"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorAccent_A"
+        android:text="Sign in"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/fontSize_btn"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/btn_signup"
+        app:layout_constraintTop_toTopOf="@+id/btn_signup" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="@dimen/sizeH_btn_admin"
+        android:layout_height="@dimen/sizeV_btn_admin"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="156dp"
+        android:background="@color/colorAccent_A"
+        android:text="Sign Up"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/fontSize_btn"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btn_user"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sgt_logo" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        tools:layout_editor_absoluteX="1280dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary_A"
+    tools:context=".StatisticActivity">
+
+    <Button
+        android:id="@+id/btn_clickToast"
+        android:layout_width="130dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorAccent_A"
+        android:text="Show"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/fontSize_btn"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_backAdmin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_backAdmin"
+        android:layout_width="118dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorAccent_A"
+        android:text="Back"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/fontSize_btn"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/displayLinear"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/bg_login"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_clickToast"
+        app:layout_constraintVertical_bias="0.484">
+
+        <TableRow
+            android:id="@+id/display_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
